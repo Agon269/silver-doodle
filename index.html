@@ -13,7 +13,7 @@
         <a class="navbar-brand" href="#"> 
              <img src="./images/logo.svg" width="181" height="26" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="menu-btn" type="button">
           
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,6 +42,33 @@
         </div>
       </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <div class="up">
+            <h3>MENU</h3>
+            <button class="btn" id="close">X</button>
+
+        </div>
+        
+        <ul>
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">INDUSTRIES</a>
+            <ul>
+                <a class="dropdown-item" href="#">Technology and Software</a>
+                <a class="dropdown-item" href="#"> Consumer Products and Insights</a>
+                <a class="dropdown-item" href="#">Marketing and Ad-Ops </a>
+               
+                <a class="dropdown-item" href="#">E-Commerce HR and Recruiting</a>
+            </ul>
+          </li>
+          <li>
+            <a href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- section 1 -->
 
@@ -91,7 +118,7 @@
       </section>
 
       <section class="section-d container">
-          <div class="service">
+          <div class="service mobile-grid">
               <div class="text">
                 <h4>AI and Machine Learning Products</h4>
                 <p class="light-color2">We’ve created some of the leading AI products on 
@@ -127,7 +154,7 @@
             </div>
         </div>
 
-        <div class="service">
+        <div class="service mobile-grid">
             <div class="text">
               <h4>Data Engineering and Architecture</h4>
               <p class="light-color2">We can help you scale your data infrastructure to handle more complex processes or high volume transactions.</p>
@@ -147,4 +174,5 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </html>
