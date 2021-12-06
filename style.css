@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-primary: #13ae8d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+a {
+  color: #000;
+}
+
+.btn-outline {
+  border-radius: 8px;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+}
+/* nav bar  */
+
+.navbar {
+  padding: 1.73%;
+}
+
+.navbar-brand {
+  padding-left: 8.54%;
+}
+
+.navbar-nav {
+  padding-right: 5%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-size: 14px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.brand-color {
+  color: var(--color-primary);
+}
+.light-color {
+  color: #000000;
+  opacity: 0.5;
+}
+.light-color2 {
+  color: #000000;
+  opacity: 0.6;
+}
+.navbar-nav > li {
+  float: left;
+  position: relative;
+  margin-right: 15px;
+}
+.navbar-light .navbar-nav .active a::after {
+  border-bottom: 3px solid var(--color-primary);
+  bottom: -8px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.dropdown-menu {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  opacity: 0.98;
+}
+.show .dropdown-toggle::after {
+  color: var(--color-primary);
+}
+/* section a */
+
+.section-a {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  position: relative;
+}
+
+.headline {
+  width: 474px;
+}
+
+.headline h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 74px;
+}
+
+.flower {
+  position: absolute;
+  top: 10.06%;
+  overflow: hidden;
+  right: 0;
+  z-index: -2;
+}
+.moons {
+  position: absolute;
+
+  width: 282px;
+  top: 157px;
+  right: 275px;
+  z-index: -1;
+}
+.magnet {
+  position: absolute;
+  left: 0;
+  top: 630px;
+}
+/* section b */
+.section-b {
+  background: #06090f url(./images/image\ 7.png) right no-repeat;
+  padding: 10px;
+  margin-top: 500px;
+  text-align: center;
+  width: 100%;
+}
+.sectionb-content {
+  width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.section-b p {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 30px;
+  opacity: 0.75;
+  line-height: 40px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.section-b h3 {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.certs {
+  margin-bottom: 30px;
+}
+/* section-c */
+.section-c {
+  text-align: center;
+
+  padding: 90px 80px 50px 80px;
+  width: 1000px;
+  margin: auto;
+}
+.section-c h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+.section-c p {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-c p span {
+  color: #000000;
+  opacity: 1;
+}
+
+.link {
+  color: #13ae8d;
+  font-weight: 900;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #13ae8d;
+}
+
+/* section-d */
+
+.section-d {
+  width: 880px;
+  margin: auto;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.reversed :first-child {
+  order: 2;
+}
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  .moons {
+    top: 0;
+    margin: 40px auto;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+  }
+  .section-a {
+    padding-top: 300px;
+    text-align: center;
+  }
+  .section-a h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .section-a p {
+    color: #000000;
+    opacity: 1;
+  }
+
+  .section-b {
+    margin-top: 350px;
+  }
+  .sectionb-content {
+    width: auto;
+  }
+
+  .section-b p {
+    font-size: 25px;
+  }
+
+  .section-b h3 {
+    font-size: 40px;
+  }
+
+  .certs img {
+    margin: 20px;
+  }
+  .section-c {
+    width: auto;
+    padding: 20px;
+  }
+  .section-d {
+    width: auto;
+    text-align: center;
+  }
+  .section-d img {
+    width: 319.68px;
+  }
+  .section-d .service {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    order: 2;
+  }
+  .reversed :first-child {
+    order: 0;
+  }
+}
